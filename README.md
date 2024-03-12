@@ -1,7 +1,7 @@
 # Intermediate-Machine-Learning-Kaggle
 Handle missing values, non-numeric values, data leakage, and more.
 
-Introduction in [exercise-introduction.ipynb](https://github.com/gabboraron/Intermediate-Machine-Learning-Kaggle/blob/main/exercise-introduction.ipynb)
+Introduction in [exercise-introduction.ipynb](https://github.com/GDSC-UVCI/Intermediate-Machine-Learning-Kaggle/blob/main/exercise-introduction.ipynb)
 
 This course also available on YouTube: [George Zoto - Kaggle Mini Courses - Intermediate Machine Learning ](https://www.youtube.com/watch?v=T88D8HtuV4A) or by [
 1littlecoder - Kaggle 30 Days of ML - Day 12 - Kaggle Missing Values, Encoding - Learn Python ML in 30 Days](https://www.youtube.com/watch?v=8CeFfzr1fAQ)
@@ -127,7 +127,7 @@ MAE from Approach 3 (An Extension to Imputation):
 #### why did imputation perform better than dropping the columns?
 > The training data has 10864 rows and 12 columns, where three columns contain missing data. For each column, less than half of the entries are missing. Thus, dropping the columns removes a lot of useful information, and so it makes sense that imputation would perform better.
 
-more about this in [exercise-missing-values.ipynb](https://github.com/gabboraron/Intermediate-Machine-Learning-Kaggle/blob/main/exercise-missing-values.ipynb)
+more about this in [exercise-missing-values.ipynb](https://github.com/GDSC-UVCI/Intermediate-Machine-Learning-Kaggle/blob/main/exercise-missing-values.ipynb)
 
 ## Categorical Variables
 - Consider a survey that asks how often you eat breakfast and provides four options: *"Never"*, *"Rarely"*, *"Most days"*, or *"Every day"*. In this case, the data is categorical, because responses fall into a fixed set of categories.
@@ -265,7 +265,7 @@ MAE from Approach 3 (One-Hot Encoding):
 ## Pipelines
 > A critical skill for deploying (and even testing) complex models with pre-processing.
 > 
-> full example of pipelines: [kaggle.com/alexisbcook/exercise-pipelines](https://www.kaggle.com/alexisbcook/exercise-pipelines); or [exercise-pipelines.ipynb](https://github.com/gabboraron/Intermediate-Machine-Learning-Kaggle/blob/main/exercise-pipelines.ipynb)
+> full example of pipelines: [kaggle.com/alexisbcook/exercise-pipelines](https://www.kaggle.com/alexisbcook/exercise-pipelines); or [exercise-pipelines.ipynb](https://github.com/GDSC-UVCI/Intermediate-Machine-Learning-Kaggle/blob/main/exercise-pipelines.ipynb)
 
 A simple way to keep your data preprocessing and modeling code organized. Specifically, a pipeline bundles preprocessing and modeling steps so you can use the whole bundle as if it were a single step.
 
@@ -274,7 +274,7 @@ A simple way to keep your data preprocessing and modeling code organized. Specif
 2. **Fewer Bugs:** There are fewer opportunities to misapply a step or forget a preprocessing step.
 3. **Easier to Productionize:** It can be surprisingly hard to transition a model from a prototype to something deployable at scale. We won't go into the many related concerns here, but pipelines can help.
 
-We take a peek at the training data from [Melbourne Housing dataset](https://www.kaggle.com/dansbecker/melbourne-housing-snapshot/home) with the `head()` method below. Notice that the data contains both [categorical data](https://github.com/gabboraron/Intermediate-Machine-Learning-Kaggle/edit/main/README.md#categorical-variables) and columns with [missing values](https://github.com/gabboraron/Intermediate-Machine-Learning-Kaggle/edit/main/README.md#missing-values). With a pipeline, it's easy to deal with both!
+We take a peek at the training data from [Melbourne Housing dataset](https://www.kaggle.com/dansbecker/melbourne-housing-snapshot/home) with the `head()` method below. Notice that the data contains both [categorical data](https://github.com/GDSC-UVCI/Intermediate-Machine-Learning-Kaggle/edit/main/README.md#categorical-variables) and columns with [missing values](https://github.com/GDSC-UVCI/Intermediate-Machine-Learning-Kaggle/edit/main/README.md#missing-values). With a pipeline, it's easy to deal with both!
 ```
        Type   Method  Regionname            Rooms   Distance  Postcode  Bedroom2  Bathroom  Car   Landsize  BuildingArea  YearBuilt   Lattitude   Longtitude  Propertycount
 12167   u       S     Southern Metropolitan   1       5.0     3182.0      1.0        1.0    1.0   0.0         NaN          1940.0     -37.85984   144.9867     13240.0
@@ -354,7 +354,7 @@ MAE: 160679.18917034855
 > *In the case of `model` you can change in the [`RandomForestRegressor()`](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html) 's [`n_estimators`](https://en.wikipedia.org/wiki/Hyperparameter_optimization) and `random_state`.* 
 
 ## Cross-Validation
-[Wikipedia](https://en.wikipedia.org/wiki/Cross-validation_(statistics)); file: [exercise-cross-validation.ipynb](https://github.com/gabboraron/Intermediate-Machine-Learning-Kaggle/blob/main/exercise-cross-validation.ipynb)
+[Wikipedia](https://en.wikipedia.org/wiki/Cross-validation_(statistics)); file: [exercise-cross-validation.ipynb](https://github.com/GDSC-UVCI/Intermediate-Machine-Learning-Kaggle/blob/main/exercise-cross-validation.ipynb)
 
 > A better way to test your models.
 >
@@ -433,7 +433,7 @@ To optimize better values for `n_estimators` see [Hyperparameter optimization](h
 ## XGBoost
 > *The most accurate modeling technique for structured data.*
 > 
-> file: [exercise-xgboost.ipynb](https://github.com/gabboraron/Intermediate-Machine-Learning-Kaggle/blob/main/exercise-xgboost.ipynb)
+> file: [exercise-xgboost.ipynb](https://github.com/GDSC-UVCI/Intermediate-Machine-Learning-Kaggle/blob/main/exercise-xgboost.ipynb)
 
 Now we are using [gradient-boosting](https://en.wikipedia.org/wiki/Gradient_boosting) insted of [random forests](https://en.wikipedia.org/wiki/Random_forest#:~:text=Random%20forests%20or%20random%20decision,decision%20trees%20at%20training%20time.&text=Random%20forests%20generally%20outperform%20decision,lower%20than%20gradient%20boosted%20trees.).
 
